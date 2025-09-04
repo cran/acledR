@@ -1,7 +1,7 @@
 Package: acledR
 Type: Package
 Title: Manipulate ACLED Data
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person(given = "Armed Conflict Location and Event Data",
            family = "ACLED", 
@@ -22,8 +22,8 @@ Description: Tools working with data from ACLED (Armed Conflict Location and Eve
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-Imports: dplyr, methods, httr, lubridate, stringr, tidyr, magrittr,
-        purrr, rlang, utils
+Imports: dplyr, methods, httr, httr2, lubridate, stringr, tidyr,
+        magrittr, purrr, rlang, lifecycle, utils
 RoxygenNote: 7.3.2
 Depends: R (>= 3.5.0)
 URL: https://dtacled.github.io/acledR/
@@ -34,11 +34,11 @@ Suggests: knitr, janitor, rmarkdown, readr, kableExtra, ggplot2, covr,
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2025-02-21 15:03:22 UTC; studio
+Packaged: 2025-09-04 19:38:24 UTC; studio
 Author: Armed Conflict Location and Event Data ACLED [cph],
   Trey Billing [aut, cre],
   Lucas Fagliano [aut],
   Katayoun Kishi [ctb]
 Maintainer: Trey Billing <t.billing@acleddata.com>
 Repository: CRAN
-Date/Publication: 2025-02-24 16:50:02 UTC
+Date/Publication: 2025-09-04 19:50:08 UTC

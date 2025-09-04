@@ -8,9 +8,6 @@ knitr::opts_chunk$set(
 library(acledR)
 library(dplyr)
 
-## ----out.width = "500px", echo = FALSE----------------------------------------
-knitr::include_graphics("workflow.png")
-
 ## ----eval=FALSE---------------------------------------------------------------
 # # Install acledR
 # install.packages("acledR") # from CRAN
@@ -21,10 +18,11 @@ knitr::include_graphics("workflow.png")
 # library(acledR)
 
 ## ----eval=FALSE---------------------------------------------------------------
-# acled_access(email = "email@example.com", key = "your_key") #  This is an example, you will need to input your credentials.
-
-## ----eval=FALSE---------------------------------------------------------------
 # argentinian_data <- acled_api(
+#   # Email address associated with your ACLED account
+#   email = Sys.getenv("ACLED_API_EMAIL"),
+#   # Password associated with your ACLED account. If left blank, you will be prompted to enter interactively.
+#   password = Sys.getenv("ACLED_API_PASSWORD"),
 #   # Country of interest
 #   country = "Argentina",
 #   # Earliest date for requested events
@@ -32,13 +30,13 @@ knitr::include_graphics("workflow.png")
 #   # Last date for requested events
 #   end_date = "2022-12-31",
 #   # Request 'inter codes' in numeric rather than text form
-#   inter_numeric = TRUE,
-#   # Turn off acled_api() interactive prompt
-#   prompt = FALSE
+#   inter_numeric = TRUE
 #   )
 
 ## ----eval = FALSE-------------------------------------------------------------
 # new_data <- acled_update(acledR::acled_old_deletion_dummy,
+#                          email = Sys.getenv("ACLED_API_EMAIL"),
+#                          password = Sys.getenv("ACLED_API_PASSWORD"),
 #                          inter_numeric = TRUE,
 #                          prompts = FALSE)
 
