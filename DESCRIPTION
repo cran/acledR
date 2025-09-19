@@ -1,7 +1,7 @@
 Package: acledR
 Type: Package
 Title: Manipulate ACLED Data
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person(given = "Armed Conflict Location and Event Data",
            family = "ACLED", 
@@ -34,11 +34,11 @@ Suggests: knitr, janitor, rmarkdown, readr, kableExtra, ggplot2, covr,
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2025-09-04 19:38:24 UTC; studio
+Packaged: 2025-09-19 12:22:29 UTC; studio
 Author: Armed Conflict Location and Event Data ACLED [cph],
   Trey Billing [aut, cre],
   Lucas Fagliano [aut],
   Katayoun Kishi [ctb]
 Maintainer: Trey Billing <t.billing@acleddata.com>
 Repository: CRAN
-Date/Publication: 2025-09-04 19:50:08 UTC
+Date/Publication: 2025-09-19 12:50:02 UTC
